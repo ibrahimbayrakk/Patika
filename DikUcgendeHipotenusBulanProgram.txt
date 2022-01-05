@@ -1,0 +1,9 @@
+Scanner scn = new Scanner(System.in);
+    int kısa,uzun;
+    double hipotenüs;
+    System.out.println("Kısa Kenarı Giriniz :");
+    kısa= scn.nextInt();
+    System.out.println("Uzun Kenarı Giriniz :");
+    uzun=scn.nextInt();
+    hipotenüs=Math.sqrt((kısa*kısa) + (uzun*uzun));
+    System.out.println("Hipotenus :"+hipotenüs);
