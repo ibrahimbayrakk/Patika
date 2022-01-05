@@ -1,0 +1,8 @@
+	double kilo,boy, index;
+        Scanner scn=new Scanner(System.in);
+        System.out.println("Kilonuzu Giriniz..");
+        kilo = scn.nextDouble();
+        System.out.println("Boyunuzu Giriniz...");
+        boy=scn.nextDouble();
+        index= kilo/(boy*boy);
+        System.out.println(index+"---");
