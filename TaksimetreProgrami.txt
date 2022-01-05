@@ -1,0 +1,9 @@
+	int km;
+        Scanner scn =new Scanner(System.in);
+        System.out.println("Mesafeyi km cinsinden giriniz :");
+        km=scn.nextInt();
+        double adim=2.20,topTutar,acilisTutari=10;
+        topTutar=(km*adim);
+        topTutar +=acilisTutari;
+        topTutar = (topTutar <20) ? 20: topTutar;
+        System.out.println("Toplam Tutar : "+topTutar);
