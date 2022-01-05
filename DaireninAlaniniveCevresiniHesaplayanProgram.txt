@@ -1,0 +1,9 @@
+        int yariCap;
+	double pi=3.14;
+        Scanner scn =new Scanner(System.in);
+        System.out.println("Dairenin  yarıçapını giriniz :");
+        yariCap =scn.nextInt();
+        double alan =pi*yariCap*yariCap;
+        double cevre =2*pi*yariCap;
+        System.out.println("Dairenin Alanı : "+alan);
+        System.out.println("Dairenin Çevresi : "+cevre);
