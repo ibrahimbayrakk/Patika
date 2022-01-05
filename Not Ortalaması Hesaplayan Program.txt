@@ -1,0 +1,17 @@
+        Scanner scn=new Scanner(System.in);
+        System.out.println("Matematik notunuzu Giriniz: ");
+        int matematik=scn.nextInt();
+        System.out.println("Fizik notunuzu Giriniz: ");
+        int fizik=scn.nextInt();
+        System.out.println("Kimya notunuzu Giriniz: ");
+        int kimya=scn.nextInt();
+        System.out.println("Türkçe notunuzu Giriniz: ");
+        int turkce=scn.nextInt();
+        System.out.println("Tarih notunuzu Giriniz: ");
+        int tarih=scn.nextInt();
+        System.out.println("Müzik notunuzu Giriniz: ");
+        int muzik=scn.nextInt();
+
+        int ortalama=(matematik+fizik+kimya+turkce+tarih+muzik)/6;
+        System.out.println("Ortalamanız : "+ortalama+" "+" ve Sınıfı Geçme Durumunuz : ");  
+        System.out.println(sonuc&gt;=60 ? "Sınıfı Geçti": "Sınıfta Kaldı");
