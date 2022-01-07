@@ -1,0 +1,20 @@
+	Scanner scn=new Scanner(System.in);
+        int yil;
+        System.out.println("Yıl giriniz: ");
+        yil = scn.nextInt();
+        
+        if (yil>100) {
+            if(yil%400==0){
+                System.out.println(yil+" bir artık yıldır!");
+            }
+            else{
+                System.out.println(yil+" bir artık yıl değildir!");
+            }
+        } else{
+                if(yil%4==0){
+            System.out.println(yil+" bir artık yıldır!");
+        } 
+        else{
+            System.out.println(yil+" bir artık yıl değildir!");
+        }
+          }
