@@ -1,0 +1,6 @@
+	int[] numbers = {10, 25, 35, 40, 55};
+        double sum = 0;
+        for (int number : numbers) {
+            sum += 1.0/number;
+        }
+        System.out.println(numbers.length / sum);
