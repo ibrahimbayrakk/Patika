@@ -1,0 +1,11 @@
+	Scanner scn = new Scanner(System.in);
+        System.out.print("Kaç elamanlı olsun:");
+        int sayi = scn.nextInt();
+        int sayi1=0,sayi2=1,sayi3;
+        System.out.print(sayi1 +" "+sayi2+" ");
+        for (int i =2; i <= sayi; i++) {
+           sayi3=sayi2+sayi1;
+           System.out.print(sayi3+" ");
+           sayi1=sayi2;
+           sayi2=sayi3;
+        }
