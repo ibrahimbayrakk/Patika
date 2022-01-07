@@ -1,0 +1,11 @@
+	Scanner input = new Scanner(System.in);
+        System.out.print("sayi giriniz: ");
+        int taban = input.nextInt();
+        System.out.print("Üs giriniz: ");
+        int us = input.nextInt();
+        int sayi=1;
+        for (int i = 0; i < us; i++) {
+           
+                sayi*=taban;
+            }
+        System.out.println(sayi);
