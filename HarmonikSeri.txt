@@ -1,0 +1,8 @@
+	Scanner scn = new Scanner(System.in);
+        System.out.print("Sayıyı giriniz:");
+        int sayi =scn.nextInt();
+        double sonuc=0;
+        for (int i = 1; i <=sayi ; i++) {
+            sonuc+=(1/(double) i);
+        }
+        System.out.print("harmonik sayı:"+sonuc);
