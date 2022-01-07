@@ -1,0 +1,12 @@
+	Scanner scn = new Scanner(System.in);
+        System.out.print("Taban:");
+        int taban=scn.nextInt();
+        System.out.print("Üstel:");
+        int us=scn.nextInt();
+        System.out.println("Sonuç:" +power(taban,us));
+    }
+    static int power (int n,int power){
+        if(power==0){
+            return 1;
+        }
+        else return n*power(n,power-1);
