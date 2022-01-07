@@ -1,0 +1,10 @@
+	Scanner scn=new Scanner(System.in);
+        int sayi,top=0;
+        do {
+            System.out.println("Sayı Giriniz: ");
+            sayi = scn.nextInt();
+            if(sayi % 4 == 0){
+                top+=sayi;
+            }
+        }while (sayi % 2 == 0);
+        System.out.println("4 ün katı olan sayıların toplamı: " + top);
