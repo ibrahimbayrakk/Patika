@@ -1,0 +1,16 @@
+	public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("N sayisini giriniz: ");
+        int n = input.nextInt();
+        System.out.print("R sayisini giriniz: ");
+        int r = input.nextInt();
+        int sonuc = faktoriyel(n) / (faktoriyel(r) * faktoriyel(n - r));
+        System.out.print("C(" + n + "," + r + ") = " + sonuc);
+    }
+    public static int faktoriyel(int deger) {
+        int fakSonuc = 1;
+        for (int i = 1; i <= deger; i++) {
+            fakSonuc *= i;
+        }
+        return fakSonuc;
+    }
