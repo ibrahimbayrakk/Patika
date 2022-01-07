@@ -1,0 +1,17 @@
+	Scanner scn = new Scanner(System.in);
+        int sayi1, sayi2, ebob = 1, ekok = 1, sayac = 1;
+        System.out.print("1. sayıyı giriniz: ");
+        sayi1 = scn.nextInt();
+        System.out.print("2. sayıyı giriniz: ");
+        sayi2 = scn.nextInt();
+        while (true) {
+            if (sayi1 % sayac == 0 && sayi2 % sayac == 0) {
+                ebob = sayac;
+            }
+            if (sayac == sayi1 || sayac == sayi2) {
+                break;
+            }
+            sayac++;
+        }
+        ekok = (sayi1 * sayi2) / ebob;
+        System.out.println(sayi1 + "," + sayi2 + " sayılarının EBOB u: " + ebob + " EKOK u " + ekok);
