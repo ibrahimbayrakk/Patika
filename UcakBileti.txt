@@ -1,0 +1,24 @@
+	Scanner input = new Scanner(System.in);
+        double km,yas,tarife,fiyat = 0.1,toplam,yasIndex = 1,index = 1;
+        System.out.print("Mesafe (km): ");
+        km = input.nextDouble();
+        System.out.print("Your Age: ");
+        yas = input.nextDouble();
+        System.out.println("Lütfen Seciniz:\n1 - Tek Gidiş\n2 - Gidiş-Dönüş");
+        tarife = input.nextDouble();
+        if (km < 0 || yas < 0 || tarife < 0 || tarife > 2) {
+            System.out.println("Lütfen Bilgileri Kontrol Ediniz.");
+        } else {
+            if (yas < 12) {
+                yasIndex = 0.5;
+            } else if (yas >= 12 && yas < 24) {
+                yasIndex = 0.9;
+            } else if (yas > 65) {
+                yasIndex = 0.7;
+            }
+            if (tarife == 2) {
+                index = 1.6;
+            }
+            toplam = km * fiyat * yasIndex * index;
+            System.out.print("Toplam Tutar: " + toplam + " TL");
+        }
