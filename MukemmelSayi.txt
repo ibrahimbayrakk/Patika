@@ -1,0 +1,14 @@
+	Scanner scn = new Scanner(System.in);
+        System.out.print("Sayı Giriniz:");
+        int num = scn.nextInt();
+        int sum=0;
+
+        for (int i = 1; i<=num/2 ; i++) {
+            if(num%i==0){
+                sum=sum+i;
+            }
+        }
+        if(num==sum){
+            System.out.println(num+"  mükemmel sayıdır.");
+        }
+        else System.out.println(num+" mükemmel sayı değildir");
