@@ -1,0 +1,24 @@
+	Random rnd =new Random();
+        int dizi[]=new int[100];
+        for (int i = 0; i < 100; i++) {
+            dizi[i]=(int)(rnd.nextInt()/10000000);
+        }
+        int count = 0;
+        Arrays.sort(dizi); 
+        for (int i = 0; i < dizi.length; i++) {
+            count = 0;
+            for (int j = 0; j < dizi.length; j++) {
+                if (dizi[i] == dizi[j]) {
+                    count++;
+                }
+            }
+            if (i == 0 && dizi[i + 1] == dizi[i]) {
+                System.out.println(String.format("%d 'den %d tane var.", dizi[i], count));
+            }
+            if (i == 0 && dizi[i + 1] != dizi[i]) {
+                System.out.println(String.format("%d 'den %d tane var.", dizi[i], count));
+            }
+            if (i != 0 && dizi[i - 1] != dizi[i]) {
+                System.out.println(String.format("%d 'den %d tane var.", dizi[i], count));
+            }
+        }
