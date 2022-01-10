@@ -1,0 +1,11 @@
+Random rnd=new Random();
+        int sayi=rnd.nextInt(100);
+        Scanner scn=new Scanner(System.in);
+        System.out.println("Tahmin edilen sayi:  "+(sayi));
+        System.out.println("Sayi Giriniz ");
+        int tahmin=scn.nextInt();
+        if (sayi==tahmin) {
+            System.out.println("Dogru buldunuz. Sayi: "+sayi);
+        }else{
+            System.out.println("Yanlış. Sayı: "+sayi);
+        }
