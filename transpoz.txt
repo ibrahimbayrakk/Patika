@@ -1,0 +1,24 @@
+        Random rnd=new Random();
+        int dizi[][]=new int[5][5];
+        int yedek[][]=new int[5][5];
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                dizi[i][j]=rnd.nextInt(10);
+            }
+        }
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print(dizi[i][j]+" ");
+            }System.out.println("");
+        }
+        System.out.println("---------------------");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                yedek[j][i]=dizi[i][j];
+            }
+        }
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                System.out.print(yedek[i][j]+" ");
+            }System.out.println("");
+        }
