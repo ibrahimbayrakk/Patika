@@ -1,2 +1,2 @@
 # Patika
-Patika Eğitim Ödevleri
+Patika Eğitimlerinde Başlangıç ve Orta Düzey Java Ödev ve Projeleri...
